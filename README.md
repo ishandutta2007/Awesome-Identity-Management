@@ -56,39 +56,39 @@ Below is a comparative matrix of top commercial enterprise identity and access m
 
 Identity management features a robust open-source ecosystem. Self-hosted options enable full data residency, custom auth logic, zero per-user licensing fees, and complete infrastructure ownership.
 
-The open-source options below are sorted by **GitHub Star Count** (descending):
+The open-source options below are sorted by **GitHub Stars_Count** (descending):
 
-- 👑 **[Keycloak](https://github.com/keycloak/keycloak)** [![GitHub stars](https://img.shields.io/github/stars/keycloak/keycloak?style=social)](https://github.com/keycloak/keycloak/stargazers)  
+- 👑 **[Keycloak](https://github.com/keycloak/keycloak)** [![GitHub_Stars](https://img.shields.io/github/stars/keycloak/keycloak?style=social)](https://github.com/keycloak/keycloak/stargazers)  
   *The industry-standard open-source identity and access management system maintained by Red Hat.* Supports SSO, OpenID Connect (OIDC), SAML 2.0, LDAP/Active Directory federation, fine-grained authorization, and identity brokering (License: Apache-2.0).
 
-- 🛡️ **[Authelia](https://github.com/authelia/authelia)** [![GitHub stars](https://img.shields.io/github/stars/authelia/authelia?style=social)](https://github.com/authelia/authelia/stargazers)  
+- 🛡️ **[Authelia](https://github.com/authelia/authelia)** [![GitHub_Stars](https://img.shields.io/github/stars/authelia/authelia?style=social)](https://github.com/authelia/authelia/stargazers)  
   *Lightweight open-source authentication and authorization server.* Designed as a companion for reverse proxies (NGINX, Traefik, Caddy, HAProxy) to provide 2FA, Duo, TOTP, WebAuthn/FIDO2, and single sign-on for self-hosted apps (License: Apache-2.0).
 
-- ⚡ **[Authentik](https://github.com/goauthentik/authentik)** [![GitHub stars](https://img.shields.io/github/stars/goauthentik/authentik?style=social)](https://github.com/goauthentik/authentik/stargazers)  
+- ⚡ **[Authentik](https://github.com/goauthentik/authentik)** [![GitHub_Stars](https://img.shields.io/github/stars/goauthentik/authentik?style=social)](https://github.com/goauthentik/authentik/stargazers)  
   *Modern open-source identity provider built for versatility.* Features an intuitive admin UI, highly customizable flow execution pipelines, SAML 2.0, OIDC, LDAP, RADIUS, and built-in reverse proxy capabilities (License: MIT core).
 
-- 🔒 **[Ory Hydra](https://github.com/ory/hydra)** [![GitHub stars](https://img.shields.io/github/stars/ory/hydra?style=social)](https://github.com/ory/hydra/stargazers)  
+- 🔒 **[Ory Hydra](https://github.com/ory/hydra)** [![GitHub_Stars](https://img.shields.io/github/stars/ory/hydra?style=social)](https://github.com/ory/hydra/stargazers)  
   *Hardened, headless OpenID Certified™ OAuth 2.0 and OpenID Connect provider.* Built in Go for ultra-low latency, multi-tenant cloud-native architectures, and microservice token issuance (License: Apache-2.0).
 
-- 🔑 **[SuperTokens](https://github.com/supertokens/supertokens-core)** [![GitHub stars](https://img.shields.io/github/stars/supertokens/supertokens-core?style=social)](https://github.com/supertokens/supertokens-core/stargazers)  
+- 🔑 **[SuperTokens](https://github.com/supertokens/supertokens-core)** [![GitHub_Stars](https://img.shields.io/github/stars/supertokens/supertokens-core?style=social)](https://github.com/supertokens/supertokens-core/stargazers)  
   *Developer-first modular open-source Auth0 alternative.* Provides pre-built UI components, session management, passwordless/magic links, OAuth social login, and multi-tenancy for web & mobile apps (License: Apache-2.0).
 
-- 🌐 **[Zitadel](https://github.com/zitadel/zitadel)** [![GitHub stars](https://img.shields.io/github/stars/zitadel/zitadel?style=social)](https://github.com/zitadel/zitadel/stargazers)  
+- 🌐 **[Zitadel](https://github.com/zitadel/zitadel)** [![GitHub_Stars](https://img.shields.io/github/stars/zitadel/zitadel?style=social)](https://github.com/zitadel/zitadel/stargazers)  
   *Cloud-native open-source identity infrastructure written in Go.* Built specifically for multi-tenant SaaS applications with audit trails, turn-key B2B organization management, and strict data isolation (License: Apache-2.0).
 
-- 🪵 **[Logto](https://github.com/logto-io/logto)** [![GitHub stars](https://img.shields.io/github/stars/logto-io/logto?style=social)](https://github.com/logto-io/logto/stargazers)  
+- 🪵 **[Logto](https://github.com/logto-io/logto)** [![GitHub_Stars](https://img.shields.io/github/stars/logto-io/logto?style=social)](https://github.com/logto-io/logto/stargazers)  
   *Modern developer-friendly open-source identity builder.* Offers responsive out-of-the-box sign-in web UIs, multi-tenant RBAC, passwordless auth, OIDC provider capability, and SDKs for Web/Mobile (License: AGPL-3.0 / MPL-2.0).
 
-- 🚪 **[Casdoor](https://github.com/casdoor/casdoor)** [![GitHub stars](https://img.shields.io/github/stars/casdoor/casdoor?style=social)](https://github.com/casdoor/casdoor/stargazers)  
+- 🚪 **[Casdoor](https://github.com/casdoor/casdoor)** [![GitHub_Stars](https://img.shields.io/github/stars/casdoor/casdoor?style=social)](https://github.com/casdoor/casdoor/stargazers)  
   *UI-first open-source identity and access management platform based on Casbin.* Supports OAuth 2.0, OIDC, SAML, WebAuthn, social logins, and integrated payment gateway flows (License: Apache-2.0).
 
-- 🏗️ **[Ory Kratos](https://github.com/ory/kratos)** [![GitHub stars](https://img.shields.io/github/stars/ory/kratos?style=social)](https://github.com/ory/kratos/stargazers)  
+- 🏗️ **[Ory Kratos](https://github.com/ory/kratos)** [![GitHub_Stars](https://img.shields.io/github/stars/ory/kratos?style=social)](https://github.com/ory/kratos/stargazers)  
   *Cloud-native identity and user management system.* Handles user registration, self-service account recovery, MFA (TOTP, WebAuthn), profile management, and identity storage (License: Apache-2.0).
 
-- 🆔 **[Dex](https://github.com/dexidp/dex)** [![GitHub stars](https://img.shields.io/github/stars/dexidp/dex?style=social)](https://github.com/dexidp/dex/stargazers)  
+- 🆔 **[Dex](https://github.com/dexidp/dex)** [![GitHub_Stars](https://img.shields.io/github/stars/dexidp/dex?style=social)](https://github.com/dexidp/dex/stargazers)  
   *OpenID Connect (OIDC) identity provider and federation broker.* Uses connectors to drive authentication against LDAP, SAML, GitHub, Google, and Active Directory—widely used in Kubernetes auth stacks (License: Apache-2.0).
 
-- 🐧 **[FreeIPA](https://github.com/freeipa/freeipa)** [![GitHub stars](https://img.shields.io/github/stars/freeipa/freeipa?style=social)](https://github.com/freeipa/freeipa/stargazers)  
+- 🐧 **[FreeIPA](https://github.com/freeipa/freeipa)** [![GitHub_Stars](https://img.shields.io/github/stars/freeipa/freeipa?style=social)](https://github.com/freeipa/freeipa/stargazers)  
   *Integrated security solution for Linux/Unix networks.* Combines 389 Directory Server (LDAP), MIT Kerberos, Dogtag Certificate System (PKI), NTP, and DNS for enterprise identity policy management (License: GPL-3.0).
 
 ---
