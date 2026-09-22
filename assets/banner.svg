@@ -1,0 +1,147 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="100%" height="100%">
+  <defs>
+    <!-- Dark Tech Gradients -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f19" />
+      <stop offset="50%" stop-color="#111827" />
+      <stop offset="100%" stop-color="#070a10" />
+    </linearGradient>
+
+    <linearGradient id="titleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#c084fc" />
+    </linearGradient>
+
+    <linearGradient id="shieldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#6366f1" stop-opacity="0.3"/>
+    </linearGradient>
+
+    <linearGradient id="glowPulse" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#818cf8" stop-opacity="0.0"/>
+    </linearGradient>
+
+    <!-- CSS Keyframe Animations -->
+    <style>
+      .glow-circle {
+        animation: pulse 4s ease-in-out infinite alternate;
+      }
+      .node-pulse {
+        animation: nodeGlow 3s ease-in-out infinite alternate;
+      }
+      .grid-line {
+        stroke: #1e293b;
+        stroke-width: 1;
+        opacity: 0.4;
+      }
+      .accent-line {
+        stroke: url(#titleGrad);
+        stroke-width: 2;
+        stroke-dasharray: 8 8;
+        animation: dashOffset 20s linear infinite;
+      }
+      @keyframes pulse {
+        0% { transform: scale(0.98); opacity: 0.3; }
+        100% { transform: scale(1.05); opacity: 0.7; }
+      }
+      @keyframes nodeGlow {
+        0% { r: 4px; opacity: 0.5; }
+        100% { r: 7px; opacity: 1; }
+      }
+      @keyframes dashOffset {
+        from { stroke-dashoffset: 0; }
+        to { stroke-dashoffset: 100; }
+      }
+      .font-title {
+        font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 800;
+      }
+      .font-sub {
+        font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 400;
+      }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="360" fill="url(#bgGrad)" rx="12"/>
+
+  <!-- Background Grid Lines -->
+  <g class="grid-layer">
+    <line x1="0" y1="60" x2="1200" y2="60" class="grid-line"/>
+    <line x1="0" y1="120" x2="1200" y2="120" class="grid-line"/>
+    <line x1="0" y1="180" x2="1200" y2="180" class="grid-line"/>
+    <line x1="0" y1="240" x2="1200" y2="240" class="grid-line"/>
+    <line x1="0" y1="300" x2="1200" y2="300" class="grid-line"/>
+
+    <line x1="150" y1="0" x2="150" y2="360" class="grid-line"/>
+    <line x1="300" y1="0" x2="300" y2="360" class="grid-line"/>
+    <line x1="450" y1="0" x2="450" y2="360" class="grid-line"/>
+    <line x1="600" y1="0" x2="600" y2="360" class="grid-line"/>
+    <line x1="750" y1="0" x2="750" y2="360" class="grid-line"/>
+    <line x1="900" y1="0" x2="900" y2="360" class="grid-line"/>
+    <line x1="1050" y1="0" x2="1050" y2="360" class="grid-line"/>
+  </g>
+
+  <!-- Animated Dynamic Background Elements (Kept Subtle & Distant to preserve foreground contrast) -->
+  <circle cx="1020" cy="180" r="140" fill="url(#glowPulse)" class="glow-circle" />
+  <circle cx="1020" cy="180" r="90" fill="none" stroke="#38bdf8" stroke-width="1.5" stroke-opacity="0.3" />
+  <circle cx="1020" cy="180" r="50" fill="none" stroke="#818cf8" stroke-width="1.5" stroke-opacity="0.5" />
+
+  <!-- Security Shield & Node Network Graphics (Right Side) -->
+  <path d="M 1020 120 L 1070 145 V 195 C 1070 230 1020 250 1020 250 C 1020 250 970 230 970 195 V 145 Z" fill="url(#shieldGrad)" stroke="#38bdf8" stroke-width="2.5" />
+  
+  <!-- Lock Symbol inside Shield -->
+  <rect x="1008" y="180" width="24" height="22" rx="4" fill="#38bdf8"/>
+  <path d="M 1013 180 V 173 C 1013 167 1027 167 1027 173 V 180" fill="none" stroke="#38bdf8" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Network Connecting Lines -->
+  <path d="M 850 100 L 970 145 M 880 260 L 970 195 M 1070 145 L 1140 110 M 1070 195 L 1130 250" class="accent-line" />
+  
+  <!-- Animated Nodes -->
+  <circle cx="850" cy="100" r="5" fill="#38bdf8" class="node-pulse"/>
+  <circle cx="880" cy="260" r="5" fill="#818cf8" class="node-pulse"/>
+  <circle cx="1140" cy="110" r="5" fill="#c084fc" class="node-pulse"/>
+  <circle cx="1130" cy="250" r="5" fill="#38bdf8" class="node-pulse"/>
+
+  <!-- Foreground Text Content (High Contrast & Clear Visibility) -->
+  <!-- Top Pill Badge -->
+  <g transform="translate(70, 50)">
+    <rect width="260" height="32" rx="16" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+    <text x="130" y="21" fill="#38bdf8" class="font-sub" font-size="13" text-anchor="middle" font-weight="600">🛡️ CURATED IAM ECOSYSTEM</text>
+  </g>
+
+  <!-- Main Title -->
+  <text x="70" y="135" fill="url(#titleGrad)" class="font-title" font-size="44">Awesome Identity Management</text>
+
+  <!-- Subtitle -->
+  <text x="70" y="175" fill="#94a3b8" class="font-sub" font-size="18">Enterprise SaaS IAM Platforms &amp; Self-Hosted Open-Source Identity Providers</text>
+
+  <!-- Feature Pills -->
+  <g transform="translate(70, 220)">
+    <!-- Pill 1: SSO -->
+    <rect x="0" y="0" width="70" height="30" rx="8" fill="#1e293b" stroke="#38bdf8" stroke-opacity="0.4"/>
+    <text x="35" y="19" fill="#e2e8f0" class="font-sub" font-size="12" text-anchor="middle" font-weight="500">SSO</text>
+
+    <!-- Pill 2: MFA -->
+    <rect x="80" y="0" width="70" height="30" rx="8" fill="#1e293b" stroke="#38bdf8" stroke-opacity="0.4"/>
+    <text x="115" y="19" fill="#e2e8f0" class="font-sub" font-size="12" text-anchor="middle" font-weight="500">MFA</text>
+
+    <!-- Pill 3: OAuth2 / OIDC -->
+    <rect x="160" y="0" width="120" height="30" rx="8" fill="#1e293b" stroke="#818cf8" stroke-opacity="0.4"/>
+    <text x="220" y="19" fill="#e2e8f0" class="font-sub" font-size="12" text-anchor="middle" font-weight="500">OAuth2 &amp; OIDC</text>
+
+    <!-- Pill 4: SAML 2.0 -->
+    <rect x="290" y="0" width="90" height="30" rx="8" fill="#1e293b" stroke="#818cf8" stroke-opacity="0.4"/>
+    <text x="335" y="19" fill="#e2e8f0" class="font-sub" font-size="12" text-anchor="middle" font-weight="500">SAML 2.0</text>
+
+    <!-- Pill 5: Zero Trust -->
+    <rect x="390" y="0" width="100" height="30" rx="8" fill="#1e293b" stroke="#c084fc" stroke-opacity="0.4"/>
+    <text x="440" y="19" fill="#e2e8f0" class="font-sub" font-size="12" text-anchor="middle" font-weight="500">Zero Trust</text>
+  </g>
+
+  <!-- Bottom Accent Bar -->
+  <rect x="0" y="354" width="1200" height="6" fill="url(#titleGrad)"/>
+</svg>
